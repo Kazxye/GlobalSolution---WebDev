@@ -54,6 +54,32 @@
             color: #1f2937;
         }
 
+        .nav-desktop {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            margin-left: 0;
+            padding: 0;
+        }
+
+        .nav-link {
+            color: #374151;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link:hover {
+            color: #ea580c;
+        }
+
         .btn {
             padding: 0.75rem 1.5rem;
             border: none;

@@ -15,15 +15,23 @@
         <!-- Header -->
         <header class="header">
             <div class="container">
-                <div class="header-content">
-                    <div class="logo">
-                        <i data-lucide="anchor" class="text-blue-600"></i>
-                        <span class="logo-text">AquaRescue</span>
-                    </div>
-                    <a href="#" class="btn btn-primary">Solicitar
-                        Demonstração</a>
-                </div>
+        <div class="header-content">
+            <div class="logo">
+                <i data-lucide="anchor" class="text-blue-600"></i>
+                <span class="logo-text">AquaRescue</span>
             </div>
+            
+            <!-- Menu Computador -->
+            <nav class="nav-desktop">
+                <ul class="nav-menu">
+                    <li><a href="#problema" class="nav-link">Problema</a></li>
+                    <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
+                    <li><a href="#objetivos" class="nav-link">Objetivos</a></li>
+                    <li><a href="#publico" class="nav-link">Público</a></li>
+                    <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                </ul>
+                <a href="#" class="btn btn-primary">Solicitar Demonstração</a>
+            </nav>
         </header>
 
         <!-- Hero Section -->
@@ -44,7 +52,7 @@
         </section>
 
         <!-- Seção 1: O Problema -->
-        <section class="section">
+        <section class="section" id="problema">
             <div class="container">
                 <div class="section-header">
                     <div class="section-icon text-red-500">
@@ -119,7 +127,7 @@
         </section>
 
         <!-- Seção 2: Tecnologias -->
-        <section class="section bg-image-1">
+        <section class="section bg-image-1" id="tecnologias">
             <div class="bg-overlay"></div>
             <div class="container section-content">
                 <div class="section-header">
@@ -206,7 +214,7 @@
         </section>
 
         <!-- Seção 3: Objetivos -->
-        <section class="section">
+        <section class="section" id="objetivos">
             <div class="container">
                 <div class="section-header">
                     <div class="section-icon text-green-600">
@@ -281,7 +289,7 @@
         </section>
 
         <!-- Seção 4: Público-Alvo -->
-        <section class="section bg-image-2">
+        <section class="section bg-image-2" id="publico">
             <div class="bg-overlay"></div>
             <div class="container section-content">
                 <div class="section-header">
@@ -406,7 +414,7 @@
         </section>
 
         <!-- Seção 5: Benefícios -->
-        <section class="section">
+        <section class="section" id="beneficios">
             <div class="container">
                 <div class="section-header">
                     <div class="section-icon text-green-600">
@@ -509,7 +517,7 @@
         </section>
 
         <!-- Seção 6: Como Ajuda no Dia a Dia -->
-        <section class="section bg-image-1">
+        <section class="section bg-image-1" id="como-ajuda">
             <div class="bg-overlay"></div>
             <div class="container section-content">
                 <div class="section-header">
@@ -670,8 +678,9 @@
             </div>
         </footer>
 
-        <script src="script.js">
+        <script>
       lucide.createIcons();
     </script>
+    <script src="script.js"></script>
     </body>
 </html>
