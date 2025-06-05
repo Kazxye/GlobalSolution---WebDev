@@ -9,6 +9,7 @@
             content="Sistema integrado de sonda e dispositivos sonoros para localização eficiente de sobreviventes e restos mortais em ambientes aquáticos" />
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="./HamburguerMenu/hamburguermenu.css">
+        <link rel="stylesheet" href="./Quiz/QuizCSS.css">
         <script
             src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     </head>
@@ -761,6 +762,24 @@
                     </div>
                 </section>
 
+                <section class="quiz-section" id="quiz">
+                    <div class="container">
+                        <h2 class="quiz-title">🔍 Quiz Interativo - Você entende
+                            sobre Resgate Aquático?</h2>
+                        <div id="quiz-box">
+                            <div id="question-container"></div>
+                            <div id="answers-container"></div>
+                            <button id="next-button"
+                                class="btn btn-primary">Próxima</button>
+                        </div>
+                        <div id="result-box" style="display: none;">
+                            <h3 id="result-text"></h3>
+                            <p id="result-message"></p>
+                            <a href="#" class="btn btn-secondary">Solicitar
+                                Demonstração</a>
+                        </div>
+                    </div>
+                </section>
                 <!-- Footer -->
                 <footer class="footer">
                     <div class="container">
@@ -783,5 +802,6 @@
     </script>
                 <script src="script.js"></script>
                 <script src="./HamburguerMenu/hamburguerscript.js"></script>
+                <script src="./Quiz/QuizScript.js"></script>
             </body>
         </html>

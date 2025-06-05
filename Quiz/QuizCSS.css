@@ -1,0 +1,12 @@
+.quiz-section {
+    background-color: #f9fafb;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.quiz-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 2rem;
+}
