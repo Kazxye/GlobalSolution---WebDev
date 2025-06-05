@@ -62,3 +62,20 @@ const resultMessage = document.getElementById('result-message');
 let currentQuestion = 0;
 let score = 0;
 let selectedAnswer = null;
+
+
+function loadQuestion() {
+    const currentQuiz = quizData[currentQuestion];
+    questionContainer.innerText = currentQuiz.question;
+    answersContainer.innerHTML = "";
+
+    currentQuiz.answers.forEach((answer, index) => {
+        const button = document.createElement('button');
+        button.innerText = answer;
+        button.classList.add('answer-button');
+        button.addEventListener('click', () => selectAnswer(index, button));
+        answersContainer.appendChild(button);
+    });
+
+    nextButton.style.display = "none";
+}
