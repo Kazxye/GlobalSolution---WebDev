@@ -58,3 +58,7 @@ const resultBox = document.getElementById('result-box');
 const quizBox = document.getElementById('quiz-box');
 const resultText = document.getElementById('result-text');
 const resultMessage = document.getElementById('result-message');
+
+let currentQuestion = 0;
+let score = 0;
+let selectedAnswer = null;
