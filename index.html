@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="./HamburguerMenu/hamburguermenu.css">
         <link rel="stylesheet" href="./Quiz/QuizCSS.css">
+        <link rel="stylesheet" href="./SlideShow/SlideShow.css">
         <script
             src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     </head>
@@ -762,6 +763,34 @@
                     </div>
                 </section>
 
+                <!-- SlideShow -->
+                <section class="slideshow-section">
+                    <div class="container">
+                        <h2 class="slideshow-title">Operações de Busca e Resgate
+                            Aquático</h2>
+                        <div class="slideshow">
+                            <button class="prev" id="prev">&#10094;</button>
+                            <div class="slides">
+                                <img
+                                    src="https://images.unsplash.com/photo-1606945928837-01596f97a3d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80"
+                                    class="slide active"
+                                    alt="Equipe de Resgate Aquático">
+                                <img
+                                    src="https://images.unsplash.com/photo-1524620270409-99187a1f17e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80"
+                                    class="slide"
+                                    alt="Tecnologia Sonar em Operação">
+                                <img
+                                    src="https://images.unsplash.com/photo-1590399685261-333f6608b962?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80"
+                                    class="slide"
+                                    alt="Busca Subaquática Profissional">
+                            </div>
+                            <button class="next" id="next">&#10095;</button>
+                        </div>
+                        <div class="dots" id="dots"></div>
+                    </div>
+                </section>
+
+                <!-- quiz  -->
                 <section class="quiz-section" id="quiz">
                     <div class="container">
                         <h2 class="quiz-title"> Quiz Interativo - Você entende
@@ -803,5 +832,6 @@
                 <script src="script.js"></script>
                 <script src="./HamburguerMenu/hamburguerscript.js"></script>
                 <script src="./Quiz/QuizScript.js"></script>
+                <script src="./SlideShow/SlideShow.js"></script>
             </body>
         </html>

@@ -1,0 +1,21 @@
+.slideshow-section {
+    background-color: #f9fafb;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.slideshow-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 2rem;
+}
+
+.slideshow {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
