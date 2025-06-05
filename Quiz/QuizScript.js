@@ -79,3 +79,12 @@ function loadQuestion() {
 
     nextButton.style.display = "none";
 }
+
+function selectAnswer(index, button) {
+    const buttons = document.querySelectorAll('.answer-button');
+    buttons.forEach(btn => btn.classList.remove('selected'));
+
+    button.classList.add('selected');
+    selectedAnswer = index;
+    nextButton.style.display = "inline-block";
+}
