@@ -88,3 +88,36 @@ function selectAnswer(index, button) {
     selectedAnswer = index;
     nextButton.style.display = "inline-block";
 }
+
+nextButton.addEventListener('click', () => {
+    if (selectedAnswer === quizData[currentQuestion].correct) {
+        score++;
+    }
+
+    currentQuestion++;
+    if (currentQuestion < quizData.length) {
+        selectedAnswer = null;
+        loadQuestion();
+    } else {
+        showResult();
+    }
+});
+
+function showResult() {
+    quizBox.style.display = "none";
+    resultBox.style.display = "block";
+
+    resultText.innerText = `Você acertou ${score} de ${quizData.length}!`;
+
+    if (score === 10) {
+        resultMessage.innerText = "Perfeito! Você é um especialista em operações de resgate aquático!";
+    } else if (score >= 7) {
+        resultMessage.innerText = "Ótimo! Você tem um bom conhecimento sobre operações de resgate.";
+    } else if (score >= 4) {
+        resultMessage.innerText = "Você sabe um pouco, mas pode aprender mais sobre o tema.";
+    } else {
+        resultMessage.innerText = "Parece que você precisa conhecer mais sobre resgate aquático. Vamos te ajudar!";
+    }
+}
+
+loadQuestion();
