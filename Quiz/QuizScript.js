@@ -50,3 +50,11 @@ const quizData = [
         correct: 0
     }
 ];
+
+const questionContainer = document.getElementById('question-container');
+const answersContainer = document.getElementById('answers-container');
+const nextButton = document.getElementById('next-button');
+const resultBox = document.getElementById('result-box');
+const quizBox = document.getElementById('quiz-box');
+const resultText = document.getElementById('result-text');
+const resultMessage = document.getElementById('result-message');
