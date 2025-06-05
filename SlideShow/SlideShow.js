@@ -27,3 +27,37 @@ function prevSlide() {
 function startAutoSlide() {
     slideInterval = setInterval(nextSlide, 5000);
 }
+
+function stopAutoSlide() {
+    clearInterval(slideInterval);
+}
+
+const dots = Array.from(slides).map((_, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+        stopAutoSlide();
+        startAutoSlide();
+    });
+    dotsContainer.appendChild(dot);
+    return dot;
+});
+
+next.addEventListener('click', () => {
+    nextSlide();
+    stopAutoSlide();
+    startAutoSlide();
+});
+
+prev.addEventListener('click', () => {
+    prevSlide();
+    stopAutoSlide();
+    startAutoSlide();
+});
+
+// Init
+showSlide(currentSlide);
+startAutoSlide();
