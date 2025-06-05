@@ -13,3 +13,17 @@ function showSlide(index) {
     slides[index].classList.add('active');
     dots[index].classList.add('active');
 }
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
+function startAutoSlide() {
+    slideInterval = setInterval(nextSlide, 5000);
+}
