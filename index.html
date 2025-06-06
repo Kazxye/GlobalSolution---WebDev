@@ -8,6 +8,10 @@
             name="description"
             content="Sistema integrado de sonda e dispositivos sonoros para localização eficiente de sobreviventes e restos mortais em ambientes aquáticos" />
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="./HamburguerMenu/hamburguermenu.css">
+        <link rel="stylesheet" href="./Quiz/QuizCSS.css">
+        <link rel="stylesheet" href="./SlideShow/SlideShow.css">
+        <link rel="stylesheet" href="./Theme-Buttons/Theme.css">
         <script
             src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     </head>
@@ -15,672 +19,832 @@
         <!-- Header -->
         <header class="header">
             <div class="container">
-        <div class="header-content">
-            <div class="logo">
-                <i data-lucide="anchor" class="text-blue-600"></i>
-                <span class="logo-text">AquaRescue</span>
-            </div>
-            
-            <!-- Menu Computador -->
-            <nav class="nav-desktop">
-                <ul class="nav-menu">
-                    <li><a href="#problema" class="nav-link">Problema</a></li>
-                    <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
-                    <li><a href="#objetivos" class="nav-link">Objetivos</a></li>
-                    <li><a href="#publico" class="nav-link">Público</a></li>
-                    <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
-                </ul>
-                <a href="#" class="btn btn-primary">Solicitar Demonstração</a>
-            </nav>
-        </header>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Tecnologia Avançada para Busca e Resgate Aquático</h1>
-                    <p>
-                        Sistema integrado de sonda e dispositivos sonoros para
-                        localização
-                        eficiente de sobreviventes e restos mortais em ambientes
-                        aquáticos
-                    </p>
-                    <a href="#" class="btn btn-secondary btn-lg">Conheça Nossa
-                        Solução</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção 1: O Problema -->
-        <section class="section" id="problema">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-icon text-red-500">
-                        <i data-lucide="alert-triangle"></i>
+                <div class="header-content">
+                    <div class="logo">
+                        <i data-lucide="anchor" class="text-blue-600"></i>
+                        <span class="logo-text">AquaRescue</span>
                     </div>
-                    <h2 class="section-title">O Problema Crítico</h2>
-                    <p class="section-subtitle">
-                        Operações de busca e resgate em ambientes aquáticos
-                        enfrentam
-                        desafios únicos que custam vidas e recursos
-                    </p>
-                </div>
 
-                <div class="grid grid-md-3 max-w-6xl" style="margin: 0 auto">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="icon-container icon-container-red">
-                                <i data-lucide="clock"></i>
-                            </div>
-                            <h3 class="card-title text-red-700">Tempo
-                                Crítico</h3>
-                        </div>
-                        <div class="card-content">
+                    <!-- Menu Computador -->
+                    <nav class="nav-desktop">
+                        <ul class="nav-menu">
+                            <li><a href="#problema"
+                                    class="nav-link">Problema</a></li>
+                            <li><a href="#tecnologias"
+                                    class="nav-link">Tecnologias</a></li>
+                            <li><a href="#objetivos"
+                                    class="nav-link">Objetivos</a></li>
+                            <li><a href="#publico"
+                                    class="nav-link">Público</a></li>
+                            <li><a href="#beneficios"
+                                    class="nav-link">Benefícios</a></li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Solicitar
+                            Demonstração</a>
+                    </nav>
+
+                    <div class="theme-switcher">
+                        <button class="theme-btn" id="light-btn"
+                            title="Tema Claro">
+                            <i data-lucide="sun"></i>
+                        </button>
+                        <button class="theme-btn" id="dark-btn"
+                            title="Tema Escuro">
+                            <i data-lucide="moon"></i>
+                        </button>
+                    </div>
+
+                    <!-- Botão Hamburguer Mobile -->
+                    <button class="hamburger" id="hamburger">
+                        <i data-lucide="menu"></i>
+                    </button>
+                    <!-- Menu Mobile  -->
+                    <div class="nav-mobile" id="nav-mobile">
+                        <button class="close-btn" id="close-btn">
+                            <i data-lucide="x"></i>
+                        </button>
+                        <ul>
+                            <li><a href="#problema"
+                                    class="nav-link">Problema</a></li>
+                            <li><a href="#tecnologias"
+                                    class="nav-link">Tecnologias</a></li>
+                            <li><a href="#objetivos"
+                                    class="nav-link">Objetivos</a></li>
+                            <li><a href="#publico"
+                                    class="nav-link">Público</a></li>
+                            <li><a href="#beneficios"
+                                    class="nav-link">Benefícios</a></li>
+                            <li><a href="#" class="btn btn-primary">Solicitar
+                                    Demonstração</a></li>
+                        </ul>
+                    </div>
+                </header>
+
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="container">
+                        <div class="hero-content">
+                            <h1>Tecnologia Avançada para Busca e Resgate
+                                Aquático</h1>
                             <p>
-                                Cada minuto é crucial em operações de resgate.
-                                Métodos
-                                tradicionais são lentos e imprecisos, reduzindo
-                                as chances de
-                                sobrevivência.
+                                Sistema integrado de sonda e dispositivos
+                                sonoros para
+                                localização
+                                eficiente de sobreviventes e restos mortais em
+                                ambientes
+                                aquáticos
+                            </p>
+                            <a href="#" class="btn btn-secondary btn-lg">Conheça
+                                Nossa
+                                Solução</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Seção 1: O Problema -->
+                <section class="section" id="problema">
+                    <div class="container">
+                        <div class="section-header">
+                            <div class="section-icon text-red-500">
+                                <i data-lucide="alert-triangle"></i>
+                            </div>
+                            <h2 class="section-title">O Problema Crítico</h2>
+                            <p class="section-subtitle">
+                                Operações de busca e resgate em ambientes
+                                aquáticos
+                                enfrentam
+                                desafios únicos que custam vidas e recursos
                             </p>
                         </div>
-                    </div>
 
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="icon-container icon-container-red">
-                                <i data-lucide="search"></i>
+                        <div class="grid grid-md-3 max-w-6xl"
+                            style="margin: 0 auto">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-red">
+                                        <i data-lucide="clock"></i>
+                                    </div>
+                                    <h3 class="card-title text-red-700">Tempo
+                                        Crítico</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Cada minuto é crucial em operações de
+                                        resgate.
+                                        Métodos
+                                        tradicionais são lentos e imprecisos,
+                                        reduzindo
+                                        as chances de
+                                        sobrevivência.
+                                    </p>
+                                </div>
                             </div>
-                            <h3 class="card-title text-red-700">Localização
-                                Imprecisa</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Técnicas convencionais de busca aquática são
-                                limitadas pela
-                                visibilidade, correntes e profundidade,
-                                dificultando a
-                                localização.
-                            </p>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="icon-container icon-container-red">
-                                <i data-lucide="waves"></i>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-red">
+                                        <i data-lucide="search"></i>
+                                    </div>
+                                    <h3
+                                        class="card-title text-red-700">Localização
+                                        Imprecisa</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Técnicas convencionais de busca aquática
+                                        são
+                                        limitadas pela
+                                        visibilidade, correntes e profundidade,
+                                        dificultando a
+                                        localização.
+                                    </p>
+                                </div>
                             </div>
-                            <h3 class="card-title text-red-700">Condições
-                                Adversas</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Condições climáticas, turbidez da água e terreno
-                                subaquático
-                                complexo tornam as operações perigosas e
-                                ineficazes.
-                            </p>
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-red">
+                                        <i data-lucide="waves"></i>
+                                    </div>
+                                    <h3
+                                        class="card-title text-red-700">Condições
+                                        Adversas</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Condições climáticas, turbidez da água e
+                                        terreno
+                                        subaquático
+                                        complexo tornam as operações perigosas e
+                                        ineficazes.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <!-- Seção 2: Tecnologias -->
-        <section class="section bg-image-1" id="tecnologias">
-            <div class="bg-overlay"></div>
-            <div class="container section-content">
-                <div class="section-header">
-                    <div class="section-icon text-white">
-                        <i data-lucide="radar"></i>
-                    </div>
-                    <h2 class="section-title section-title-white">
-                        Tecnologias Avançadas
-                    </h2>
-                    <p class="section-subtitle section-subtitle-white">
-                        Combinamos as mais modernas tecnologias para criar uma
-                        solução
-                        completa e eficiente
-                    </p>
-                </div>
-
-                <div class="grid grid-md-2 grid-lg-4 max-w-6xl"
-                    style="margin: 0 auto">
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <div class="icon-container icon-container-white">
+                <!-- Seção 2: Tecnologias -->
+                <section class="section bg-image-1" id="tecnologias">
+                    <div class="bg-overlay"></div>
+                    <div class="container section-content">
+                        <div class="section-header">
+                            <div class="section-icon text-white">
                                 <i data-lucide="radar"></i>
                             </div>
-                            <h3 class="card-title">Sonar Avançado</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Sistema de sonar de alta resolução para
-                                mapeamento preciso do
-                                fundo aquático
+                            <h2 class="section-title section-title-white">
+                                Tecnologias Avançadas
+                            </h2>
+                            <p class="section-subtitle section-subtitle-white">
+                                Combinamos as mais modernas tecnologias para
+                                criar uma
+                                solução
+                                completa e eficiente
                             </p>
                         </div>
-                    </div>
 
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <div class="icon-container icon-container-white">
-                                <i data-lucide="search"></i>
+                        <div class="grid grid-md-2 grid-lg-4 max-w-6xl"
+                            style="margin: 0 auto">
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-white">
+                                        <i data-lucide="radar"></i>
+                                    </div>
+                                    <h3 class="card-title">Sonar Avançado</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Sistema de sonar de alta resolução para
+                                        mapeamento preciso do
+                                        fundo aquático
+                                    </p>
+                                </div>
                             </div>
-                            <h3 class="card-title">Sensores Acústicos</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Dispositivos sonoros especializados para
-                                detecção de sinais
-                                vitais e objetos submersos
-                            </p>
-                        </div>
-                    </div>
 
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <div class="icon-container icon-container-white">
-                                <i data-lucide="anchor"></i>
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-white">
+                                        <i data-lucide="search"></i>
+                                    </div>
+                                    <h3 class="card-title">Sensores
+                                        Acústicos</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Dispositivos sonoros especializados para
+                                        detecção de sinais
+                                        vitais e objetos submersos
+                                    </p>
+                                </div>
                             </div>
-                            <h3 class="card-title">Embarcação Especializada</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Barco equipado com tecnologia de navegação
-                                autônoma e sistemas
-                                de posicionamento GPS
-                            </p>
-                        </div>
-                    </div>
 
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <div class="icon-container icon-container-white">
-                                <i data-lucide="shield"></i>
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-white">
+                                        <i data-lucide="anchor"></i>
+                                    </div>
+                                    <h3 class="card-title">Embarcação
+                                        Especializada</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Barco equipado com tecnologia de
+                                        navegação
+                                        autônoma e sistemas
+                                        de posicionamento GPS
+                                    </p>
+                                </div>
                             </div>
-                            <h3 class="card-title">IA e Machine Learning</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Algoritmos inteligentes para análise de dados e
-                                otimização de
-                                padrões de busca
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Seção 3: Objetivos -->
-        <section class="section" id="objetivos">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-icon text-green-600">
-                        <i data-lucide="target"></i>
-                    </div>
-                    <h2 class="section-title">Nossos Objetivos</h2>
-                    <p class="section-subtitle">
-                        Metas claras para revolucionar as operações de busca e
-                        resgate
-                        aquático
-                    </p>
-                </div>
-
-                <div class="feature-list max-w-5xl">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i data-lucide="clock"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Reduzir Tempo de Resposta</h3>
-                            <p>
-                                Diminuir em 70% o tempo necessário para
-                                localizar sobreviventes
-                                e restos mortais em operações de resgate.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i data-lucide="target"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Aumentar Precisão</h3>
-                            <p>
-                                Alcançar 95% de precisão na localização de
-                                objetos e pessoas em
-                                ambientes aquáticos diversos.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i data-lucide="shield"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Garantir Segurança</h3>
-                            <p>
-                                Minimizar riscos para equipes de resgate através
-                                de operações
-                                remotas e automatizadas.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i data-lucide="heart"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Salvar Vidas</h3>
-                            <p>
-                                Aumentar significativamente as taxas de
-                                sobrevivência em
-                                operações de busca e resgate aquático.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção 4: Público-Alvo -->
-        <section class="section bg-image-2" id="publico">
-            <div class="bg-overlay"></div>
-            <div class="container section-content">
-                <div class="section-header">
-                    <div class="section-icon text-white">
-                        <i data-lucide="users"></i>
-                    </div>
-                    <h2
-                        class="section-title section-title-white">Público-Alvo</h2>
-                    <p class="section-subtitle section-subtitle-white">
-                        Nossa solução atende organizações e profissionais
-                        dedicados ao
-                        salvamento de vidas
-                    </p>
-                </div>
-
-                <div class="grid grid-md-2 grid-lg-3 max-w-6xl"
-                    style="margin: 0 auto">
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <div
-                                class="icon-container icon-container-white icon-container-lg">
-                                <i data-lucide="shield"></i>
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-white">
+                                        <i data-lucide="shield"></i>
+                                    </div>
+                                    <h3 class="card-title">IA e Machine
+                                        Learning</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Algoritmos inteligentes para análise de
+                                        dados e
+                                        otimização de
+                                        padrões de busca
+                                    </p>
+                                </div>
                             </div>
-                            <h3 class="card-title">Corpo de Bombeiros</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Equipes especializadas em resgate aquático que
-                                precisam de
-                                tecnologia avançada para operações eficientes.
-                            </p>
                         </div>
                     </div>
+                </section>
 
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <div
-                                class="icon-container icon-container-white icon-container-lg">
-                                <i data-lucide="anchor"></i>
+                <!-- Seção 3: Objetivos -->
+                <section class="section" id="objetivos">
+                    <div class="container">
+                        <div class="section-header">
+                            <div class="section-icon text-green-600">
+                                <i data-lucide="target"></i>
                             </div>
-                            <h3 class="card-title">Guarda Costeira</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Organizações marítimas responsáveis por
-                                operações de busca e
-                                resgate em águas costeiras e oceânicas.
+                            <h2 class="section-title">Nossos Objetivos</h2>
+                            <p class="section-subtitle">
+                                Metas claras para revolucionar as operações de
+                                busca e
+                                resgate
+                                aquático
                             </p>
                         </div>
-                    </div>
 
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <div
-                                class="icon-container icon-container-white icon-container-lg">
+                        <div class="feature-list max-w-5xl">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i data-lucide="clock"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Reduzir Tempo de Resposta</h3>
+                                    <p>
+                                        Diminuir em 70% o tempo necessário para
+                                        localizar sobreviventes
+                                        e restos mortais em operações de
+                                        resgate.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i data-lucide="target"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Aumentar Precisão</h3>
+                                    <p>
+                                        Alcançar 95% de precisão na localização
+                                        de
+                                        objetos e pessoas em
+                                        ambientes aquáticos diversos.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i data-lucide="shield"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Garantir Segurança</h3>
+                                    <p>
+                                        Minimizar riscos para equipes de resgate
+                                        através
+                                        de operações
+                                        remotas e automatizadas.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i data-lucide="heart"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Salvar Vidas</h3>
+                                    <p>
+                                        Aumentar significativamente as taxas de
+                                        sobrevivência em
+                                        operações de busca e resgate aquático.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Seção 4: Público-Alvo -->
+                <section class="section bg-image-2" id="publico">
+                    <div class="bg-overlay"></div>
+                    <div class="container section-content">
+                        <div class="section-header">
+                            <div class="section-icon text-white">
                                 <i data-lucide="users"></i>
                             </div>
-                            <h3 class="card-title">Defesa Civil</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Órgãos governamentais que coordenam operações de
-                                emergência e
-                                desastres naturais envolvendo corpos d'água.
+                            <h2
+                                class="section-title section-title-white">Público-Alvo</h2>
+                            <p class="section-subtitle section-subtitle-white">
+                                Nossa solução atende organizações e
+                                profissionais
+                                dedicados ao
+                                salvamento de vidas
                             </p>
                         </div>
-                    </div>
 
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <div
-                                class="icon-container icon-container-white icon-container-lg">
-                                <i data-lucide="search"></i>
+                        <div class="grid grid-md-2 grid-lg-3 max-w-6xl"
+                            style="margin: 0 auto">
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-white icon-container-lg">
+                                        <i data-lucide="shield"></i>
+                                    </div>
+                                    <h3 class="card-title">Corpo de
+                                        Bombeiros</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Equipes especializadas em resgate
+                                        aquático que
+                                        precisam de
+                                        tecnologia avançada para operações
+                                        eficientes.
+                                    </p>
+                                </div>
                             </div>
-                            <h3 class="card-title">Polícia Civil</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Departamentos especializados em investigação
-                                criminal que
-                                necessitam localizar evidências em ambientes
-                                aquáticos.
-                            </p>
+
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-white icon-container-lg">
+                                        <i data-lucide="anchor"></i>
+                                    </div>
+                                    <h3 class="card-title">Guarda Costeira</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Organizações marítimas responsáveis por
+                                        operações de busca e
+                                        resgate em águas costeiras e oceânicas.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-white icon-container-lg">
+                                        <i data-lucide="users"></i>
+                                    </div>
+                                    <h3 class="card-title">Defesa Civil</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Órgãos governamentais que coordenam
+                                        operações de
+                                        emergência e
+                                        desastres naturais envolvendo corpos
+                                        d'água.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-white icon-container-lg">
+                                        <i data-lucide="search"></i>
+                                    </div>
+                                    <h3 class="card-title">Polícia Civil</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Departamentos especializados em
+                                        investigação
+                                        criminal que
+                                        necessitam localizar evidências em
+                                        ambientes
+                                        aquáticos.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-white icon-container-lg">
+                                        <i data-lucide="heart"></i>
+                                    </div>
+                                    <h3 class="card-title">ONGs de Resgate</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Organizações não-governamentais
+                                        dedicadas ao
+                                        salvamento aquático
+                                        e operações humanitárias.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <div
+                                        class="icon-container icon-container-white icon-container-lg">
+                                        <i data-lucide="waves"></i>
+                                    </div>
+                                    <h3 class="card-title">Empresas
+                                        Portuárias</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Companhias que operam em portos e
+                                        necessitam de
+                                        capacidade de
+                                        resposta rápida para emergências
+                                        aquáticas.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <div
-                                class="icon-container icon-container-white icon-container-lg">
+                <!-- Seção 5: Benefícios -->
+                <section class="section" id="beneficios">
+                    <div class="container">
+                        <div class="section-header">
+                            <div class="section-icon text-green-600">
                                 <i data-lucide="heart"></i>
                             </div>
-                            <h3 class="card-title">ONGs de Resgate</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Organizações não-governamentais dedicadas ao
-                                salvamento aquático
-                                e operações humanitárias.
+                            <h2 class="section-title">Benefícios da Nossa
+                                Solução</h2>
+                            <p class="section-subtitle">
+                                Vantagens concretas que transformam operações de
+                                busca e
+                                resgate
                             </p>
                         </div>
-                    </div>
 
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <div
-                                class="icon-container icon-container-white icon-container-lg">
-                                <i data-lucide="waves"></i>
+                        <div class="feature-list max-w-6xl">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i data-lucide="clock"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Resposta Ultrarrápida</h3>
+                                    <p>
+                                        Redução drástica no tempo de
+                                        localização,
+                                        aumentando
+                                        significativamente as chances de
+                                        sobrevivência
+                                        em emergências.
+                                    </p>
+                                </div>
                             </div>
-                            <h3 class="card-title">Empresas Portuárias</h3>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i data-lucide="target"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Precisão Excepcional</h3>
+                                    <p>
+                                        Localização exata mesmo em condições
+                                        adversas,
+                                        eliminando buscas
+                                        desnecessárias e otimizando recursos.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i data-lucide="shield"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Operação Segura</h3>
+                                    <p>
+                                        Minimiza riscos para equipes de resgate
+                                        através
+                                        de tecnologia
+                                        remota e sistemas automatizados.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i data-lucide="radar"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Cobertura Ampla</h3>
+                                    <p>
+                                        Capacidade de operar em diversos tipos
+                                        de
+                                        ambiente aquático,
+                                        desde rios até oceanos profundos.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i data-lucide="users"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Facilidade de Uso</h3>
+                                    <p>
+                                        Interface intuitiva que permite operação
+                                        eficiente mesmo por
+                                        equipes com treinamento básico.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i data-lucide="heart"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Custo-Benefício</h3>
+                                    <p>
+                                        Redução significativa nos custos
+                                        operacionais
+                                        através da
+                                        otimização de recursos e tempo.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <p>
-                                Companhias que operam em portos e necessitam de
-                                capacidade de
-                                resposta rápida para emergências aquáticas.
+                    </div>
+                </section>
+
+                <!-- Seção 6: Como Ajuda no Dia a Dia -->
+                <section class="section bg-image-1" id="como-ajuda">
+                    <div class="bg-overlay"></div>
+                    <div class="container section-content">
+                        <div class="section-header">
+                            <div class="section-icon text-white">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <h2 class="section-title section-title-white">
+                                Transformando o Dia a Dia das Operações
+                            </h2>
+                            <p class="section-subtitle section-subtitle-white">
+                                Veja como nossa solução revoluciona as operações
+                                de
+                                busca e resgate
+                                aquático
                             </p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Seção 5: Benefícios -->
-        <section class="section" id="beneficios">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-icon text-green-600">
-                        <i data-lucide="heart"></i>
-                    </div>
-                    <h2 class="section-title">Benefícios da Nossa Solução</h2>
-                    <p class="section-subtitle">
-                        Vantagens concretas que transformam operações de busca e
-                        resgate
-                    </p>
-                </div>
+                        <div class="grid grid-md-2 grid-lg-3 max-w-6xl"
+                            style="margin: 0 auto">
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <i
+                                        data-lucide="search"
+                                        class="text-orange-400"
+                                        style="width: 3rem; height: 3rem; margin-bottom: 1rem"></i>
+                                    <h3 class="card-title">Detecção
+                                        Automática</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        O sistema identifica automaticamente
+                                        sinais de
+                                        vida e objetos
+                                        submersos, alertando imediatamente as
+                                        equipes de
+                                        resgate.
+                                    </p>
+                                </div>
+                            </div>
 
-                <div class="feature-list max-w-6xl">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i data-lucide="clock"></i>
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <i
+                                        data-lucide="radar"
+                                        class="text-orange-400"
+                                        style="width: 3rem; height: 3rem; margin-bottom: 1rem"></i>
+                                    <h3 class="card-title">Mapeamento em Tempo
+                                        Real</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Criação instantânea de mapas detalhados
+                                        do fundo
+                                        aquático,
+                                        facilitando a navegação e localização
+                                        precisa.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <i
+                                        data-lucide="target"
+                                        class="text-orange-400"
+                                        style="width: 3rem; height: 3rem; margin-bottom: 1rem"></i>
+                                    <h3 class="card-title">Coordenação
+                                        Eficiente</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Centralização de informações que permite
+                                        coordenação perfeita
+                                        entre múltiplas equipes de resgate.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <i
+                                        data-lucide="shield"
+                                        class="text-orange-400"
+                                        style="width: 3rem; height: 3rem; margin-bottom: 1rem"></i>
+                                    <h3 class="card-title">Monitoramento
+                                        Contínuo</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Vigilância 24/7 de áreas críticas,
+                                        permitindo
+                                        resposta imediata
+                                        a qualquer emergência aquática.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <i
+                                        data-lucide="users"
+                                        class="text-orange-400"
+                                        style="width: 3rem; height: 3rem; margin-bottom: 1rem"></i>
+                                    <h3 class="card-title">Treinamento
+                                        Integrado</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Sistema de simulação que permite
+                                        treinamento
+                                        constante das
+                                        equipes sem riscos reais.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card card-glass">
+                                <div class="card-header">
+                                    <i
+                                        data-lucide="heart"
+                                        class="text-orange-400"
+                                        style="width: 3rem; height: 3rem; margin-bottom: 1rem"></i>
+                                    <h3 class="card-title">Suporte Familiar</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Atualizações em tempo real para
+                                        familiares,
+                                        proporcionando
+                                        transparência e tranquilidade durante
+                                        operações.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="feature-content">
-                            <h3>Resposta Ultrarrápida</h3>
-                            <p>
-                                Redução drástica no tempo de localização,
-                                aumentando
-                                significativamente as chances de sobrevivência
-                                em emergências.
+                    </div>
+                </section>
+
+                <!-- Call to Action -->
+                <section class="section bg-image-3">
+                    <div class="bg-overlay"></div>
+                    <div class="container section-content">
+                        <div class="cta">
+                            <h2 class="text-white">Pronto para Salvar Mais
+                                Vidas?</h2>
+                            <p class="text-white">
+                                Entre em contato conosco e descubra como nossa
+                                tecnologia pode
+                                revolucionar suas operações de busca e resgate
                             </p>
+                            <div class="cta-buttons">
+                                <a href="#"
+                                    class="btn btn-secondary btn-lg">Solicitar
+                                    Demonstração</a>
+                                <a href="#" class="btn btn-outline btn-lg">Falar
+                                    com
+                                    Especialista</a>
+                            </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i data-lucide="target"></i>
+                <!-- SlideShow -->
+                <section class="slideshow-section">
+                    <div class="container">
+                        <h2 class="slideshow-title">Operações de Busca e Resgate
+                            Aquático</h2>
+                        <div class="slideshow">
+                            <button class="prev" id="prev">&#10094;</button>
+                            <div class="slides">
+                                <img
+                                    src="./images/resgate_rio_grande_do_sul.png"
+                                    class="slide active"
+                                    alt="Equipe de Resgate Aquático">
+                                <img
+                                    src="./images/pet2.webp"
+                                    class="slide"
+                                    alt="Resgate de Cachorro no Rio">
+                                <img
+                                    src="./images/testeimg.webp"
+                                    class="slide"
+                                    alt="Busca Subaquática Profissional">
+                            </div>
+                            <button class="next" id="next">&#10095;</button>
                         </div>
-                        <div class="feature-content">
-                            <h3>Precisão Excepcional</h3>
-                            <p>
-                                Localização exata mesmo em condições adversas,
-                                eliminando buscas
-                                desnecessárias e otimizando recursos.
-                            </p>
+                        <div class="dots" id="dots"></div>
+                    </div>
+                </section>
+
+                <!-- quiz  -->
+                <section class="quiz-section" id="quiz">
+                    <div class="container">
+                        <h2 class="quiz-title"> Quiz Interativo - Você entende
+                            sobre Resgate Aquático?</h2>
+                        <div id="quiz-box">
+                            <div id="question-container"></div>
+                            <div id="answers-container"></div>
+                            <button id="next-button"
+                                class="btn btn-primary">Próxima</button>
+                        </div>
+                        <div id="result-box" style="display: none;">
+                            <h3 id="result-text"></h3>
+                            <p id="result-message"></p>
+                            <a href="#" class="btn btn-secondary">Solicitar
+                                Demonstração</a>
                         </div>
                     </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i data-lucide="shield"></i>
+                </section>
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer-logo">
+                            <i data-lucide="anchor" class="text-blue-400"></i>
+                            <span class="footer-logo-text">AquaRescue</span>
                         </div>
-                        <div class="feature-content">
-                            <h3>Operação Segura</h3>
-                            <p>
-                                Minimiza riscos para equipes de resgate através
-                                de tecnologia
-                                remota e sistemas automatizados.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i data-lucide="radar"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Cobertura Ampla</h3>
-                            <p>
-                                Capacidade de operar em diversos tipos de
-                                ambiente aquático,
-                                desde rios até oceanos profundos.
-                            </p>
+                        <div class="footer-content">
+                            <p>&copy; 2025 AquaRescue. Todos os direitos
+                                reservados.</p>
+                            <p>Tecnologia avançada para salvar vidas em
+                                ambientes
+                                aquáticos.</p>
                         </div>
                     </div>
+                </footer>
 
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i data-lucide="users"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Facilidade de Uso</h3>
-                            <p>
-                                Interface intuitiva que permite operação
-                                eficiente mesmo por
-                                equipes com treinamento básico.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i data-lucide="heart"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Custo-Benefício</h3>
-                            <p>
-                                Redução significativa nos custos operacionais
-                                através da
-                                otimização de recursos e tempo.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção 6: Como Ajuda no Dia a Dia -->
-        <section class="section bg-image-1" id="como-ajuda">
-            <div class="bg-overlay"></div>
-            <div class="container section-content">
-                <div class="section-header">
-                    <div class="section-icon text-white">
-                        <i data-lucide="clock"></i>
-                    </div>
-                    <h2 class="section-title section-title-white">
-                        Transformando o Dia a Dia das Operações
-                    </h2>
-                    <p class="section-subtitle section-subtitle-white">
-                        Veja como nossa solução revoluciona as operações de
-                        busca e resgate
-                        aquático
-                    </p>
-                </div>
-
-                <div class="grid grid-md-2 grid-lg-3 max-w-6xl"
-                    style="margin: 0 auto">
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <i
-                                data-lucide="search"
-                                class="text-orange-400"
-                                style="width: 3rem; height: 3rem; margin-bottom: 1rem"></i>
-                            <h3 class="card-title">Detecção Automática</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                O sistema identifica automaticamente sinais de
-                                vida e objetos
-                                submersos, alertando imediatamente as equipes de
-                                resgate.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <i
-                                data-lucide="radar"
-                                class="text-orange-400"
-                                style="width: 3rem; height: 3rem; margin-bottom: 1rem"></i>
-                            <h3 class="card-title">Mapeamento em Tempo Real</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Criação instantânea de mapas detalhados do fundo
-                                aquático,
-                                facilitando a navegação e localização precisa.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <i
-                                data-lucide="target"
-                                class="text-orange-400"
-                                style="width: 3rem; height: 3rem; margin-bottom: 1rem"></i>
-                            <h3 class="card-title">Coordenação Eficiente</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Centralização de informações que permite
-                                coordenação perfeita
-                                entre múltiplas equipes de resgate.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <i
-                                data-lucide="shield"
-                                class="text-orange-400"
-                                style="width: 3rem; height: 3rem; margin-bottom: 1rem"></i>
-                            <h3 class="card-title">Monitoramento Contínuo</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Vigilância 24/7 de áreas críticas, permitindo
-                                resposta imediata
-                                a qualquer emergência aquática.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <i
-                                data-lucide="users"
-                                class="text-orange-400"
-                                style="width: 3rem; height: 3rem; margin-bottom: 1rem"></i>
-                            <h3 class="card-title">Treinamento Integrado</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Sistema de simulação que permite treinamento
-                                constante das
-                                equipes sem riscos reais.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card card-glass">
-                        <div class="card-header">
-                            <i
-                                data-lucide="heart"
-                                class="text-orange-400"
-                                style="width: 3rem; height: 3rem; margin-bottom: 1rem"></i>
-                            <h3 class="card-title">Suporte Familiar</h3>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Atualizações em tempo real para familiares,
-                                proporcionando
-                                transparência e tranquilidade durante operações.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="section bg-image-3">
-            <div class="bg-overlay"></div>
-            <div class="container section-content">
-                <div class="cta">
-                    <h2 class="text-white">Pronto para Salvar Mais Vidas?</h2>
-                    <p class="text-white">
-                        Entre em contato conosco e descubra como nossa
-                        tecnologia pode
-                        revolucionar suas operações de busca e resgate
-                    </p>
-                    <div class="cta-buttons">
-                        <a href="#" class="btn btn-secondary btn-lg">Solicitar
-                            Demonstração</a>
-                        <a href="#" class="btn btn-outline btn-lg">Falar com
-                            Especialista</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-logo">
-                    <i data-lucide="anchor" class="text-blue-400"></i>
-                    <span class="footer-logo-text">AquaRescue</span>
-                </div>
-                <div class="footer-content">
-                    <p>&copy; 2025 AquaRescue. Todos os direitos reservados.</p>
-                    <p>Tecnologia avançada para salvar vidas em ambientes
-                        aquáticos.</p>
-                </div>
-            </div>
-        </footer>
-
-        <script>
+                <script>
       lucide.createIcons();
     </script>
-    <script src="script.js"></script>
-    </body>
-</html>
+                <script src="script.js"></script>
+                <script src="./HamburguerMenu/hamburguerscript.js"></script>
+                <script src="./Quiz/QuizScript.js"></script>
+                <script src="./SlideShow/SlideShow.js"></script>
+                <script src="./Theme-Buttons/Theme.js"></script>
+            </body>
+        </html>
